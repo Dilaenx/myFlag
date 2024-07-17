@@ -18,7 +18,7 @@
                     <br>Capital    : ${element.capital}</br>
                     <br>Region     : ${element.region}</br>
                     <br>Population : ${element.population}</br>
-              
+                    <a class="btn btn-primary" href="${element.maps.googleMaps}">Go To Maps</a>
                     </td>
                     <td><img src="${element.flags.png}"></td>
                 </tr>`
