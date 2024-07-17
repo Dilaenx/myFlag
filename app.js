@@ -13,8 +13,14 @@
 
         tableBody+=`
                 <tr>
-                    <td>${element.name.common}</td>
-                    <td>${element.flag}</td>
+                    <td><h1>${element.name.common}</h1>
+                
+                    <br>Capital    : ${element.capital}</br>
+                    <br>Region     : ${element.region}</br>
+                    <br>Population : ${element.population}</br>
+              
+                    </td>
+                    <td><img src="${element.flags.png}"></td>
                 </tr>`
     })
 
