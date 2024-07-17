@@ -1,8 +1,7 @@
  let tblCounties = document.getElementById("tblCountries");
 let idCard = document.getElementById("idCard");
  let tableBody=`<tr>
-            <th>County Name</th>
-            <th>Flag</th>
+            
       
         </tr>`;
  let details ;
@@ -13,16 +12,11 @@ let idCard = document.getElementById("idCard");
        
 
         tableBody+=`
-                <tr>
-                
-                    <td><h1>${element.name.common}</h1>
-                
-                    <br>Capital    : ${element.capital}</br>
-                    <br>Region     : ${element.region}</br>
-                    <br>Population : ${element.population}</br>
-                    </td>
-                    <td>
-                                           <div class="card" style="width: 18rem;">
+               
+                        
+                       
+                     <div class="col">
+                                        <div class="card" style="width: 18rem;">
                         <img src="${element.flags.png}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title font-monospace " >${element.name.official}</h5>
@@ -30,11 +24,10 @@ let idCard = document.getElementById("idCard");
                             <a href="${element.maps.googleMaps}" class="btn btn-primary">Go to Map</a>
                         </div>
                         </div>
-                       
-                    </td>
+                     </div>
             
                    
-                </tr>`
+                `
               
 
 
